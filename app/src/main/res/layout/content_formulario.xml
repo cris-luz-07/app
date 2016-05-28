@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="titopetri.com.agendadecontatos.Formulario"
+    tools:showIn="@layout/activity_formulario">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/imagemForm"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/person"
+                    android:background="#0499ea" />
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/botaoFotoForm"
+                    android:layout_alignBottom="@+id/imagemForm"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/layout_botao_foto" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/nomeForm"
+                    android:layout_below="@+id/imagemForm"
+                    android:layout_centerHorizontal="true"
+                    android:hint="nome:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/emailForm"
+                    android:layout_below="@+id/nomeForm"
+                    android:layout_centerHorizontal="true"
+                    android:hint="e-mail:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/siteForm"
+                    android:layout_below="@+id/emailForm"
+                    android:layout_centerHorizontal="true"
+                    android:hint="website:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/telefoneForm"
+                    android:layout_below="@+id/siteForm"
+                    android:layout_centerHorizontal="true"
+                    android:hint="telefone:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enderecoForm"
+                    android:layout_below="@+id/telefoneForm"
+                    android:layout_centerHorizontal="true"
+                    android:hint="endereço:" />
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>
